@@ -21,8 +21,14 @@ const getPostById = async (req, res) => {
     res.status(200).json(post);
 }
 
+const fileUpload = async (req, res) => {
+
+    console.log(req.file);
+}
+
 module.exports = {
     getAllPosts,
     addNewPost,
-    getPostById
+    getPostById,
+    fileUpload
 }
